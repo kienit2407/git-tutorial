@@ -1,0 +1,24 @@
+HOW TO USE GIT:
+- Muốn kéo code từ 1 link file bất kì: ta vẫn sử dụng câu lệnh git clone "link respository của file đó"
+- Create a git file then code:
+1. Create a respository file on github
+2. Sử dụng lệnh "git clone" link_resposiory để tạo file trên git
+3. Sau khi code xong ta sử dụng git status (kiểm tra có những file nào được đẩy lên là file mới hay file cũ)
+4. Sử dụng git add . (để add tất cả các file của dự án lê)
+5. Sử dụng git commit -m " your message(mô tả )"
+6. Sử dụng git push origin main (dùng lệnh này để push code lên)   
+- TH 2: ta có một mã nguôn trên local và muốn push lên git
+  th1: ĐÃ CÓ MỘT RESPOSIOR RỒI:
+git remote add origin https://github.com/kienit2407/git-tutorial.git
+git branch -M main
+git push origin main
+  th2: MỘT RESPOSIOY ĐẦU TIÊN:
+1. git init
+2. git status
+3. git add .
+4. git status (kiểm tra lại)
+5. git -commit - m "message"
+6. Dùng lệnh git remote add origin link_res.git để tạo sợi dây kết nối đến sự án của bạn trên github và local
+7. git push origin master
+- Tạo key ssh cho gihub 
+ssh-keygen -t rsa -b 4096 -C "email_cua_ban@example.com" 
